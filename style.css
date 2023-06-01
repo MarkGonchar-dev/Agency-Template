@@ -1,0 +1,125 @@
+
+.main {
+    width: 600px;
+    height: 424px;
+    background-color: white;
+    margin-left: 50%;
+    margin-top: 20px;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 50px black;
+}
+
+.header {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #DDD;
+}
+
+.navigation-list {
+    display: inline-flex;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+.navigation-list li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    font: bold 18px "Arial";
+}
+
+content {
+    display: flex;
+    width: 100%;
+}
+
+.title {
+    margin-left: 40px;
+    font: bold 40px "Arial";
+    margin-bottom: 0px;
+    display: block;
+}
+
+.phrase {
+    margin-left: 40px;
+    font: lighter 20px "Arial";
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.info-btn {
+    background-color: #52D0F0;
+    border: none;
+    border-radius: 4px;
+    margin-left: 40px;
+    width: 153px;
+    height: 48px;
+    padding: 12px 36px 12px 36px;
+    color: white;
+    font: lighter 16px "Arial";
+    transition: all .2s ease;
+}
+
+.info-btn:hover {
+    cursor: pointer;
+    transition: all .2s ease;
+    background-color: #85e7ff;
+}
+
+.hero {
+    display: block;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        width: 80vw;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .header {
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    content {
+        flex-direction: column-reverse;
+    }
+
+    .title {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .phrase {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .info-btn {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hero {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
